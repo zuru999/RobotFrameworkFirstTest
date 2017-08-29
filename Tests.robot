@@ -13,15 +13,15 @@ ${BROWSER}      chrome
 
 
 Google devops and find eficode
-    [Tags]  devops eficode smoke
+    [Tags]  devops
     Google and check results    devops  wikipedia.org/wiki/DevOps
 
 Google devo and find its web site
-    [Tags]  Devo eficode
+    [Tags]  devo
     Google and check results    deveo   deveo.com
 
 Google robot and find its web site
-    [Tags]  robot
+    [Tags]  robot   devo
     Google and check results    robot framework     robotframework.org
 
 
@@ -33,6 +33,7 @@ Google and check results
 #    click element   name=btnK
     press key  id=lst-ib    \\13
     wait until page contains        ${results}
+#   capture page screenshot  file.jpg
 
 
 

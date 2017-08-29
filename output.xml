@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170829 15:12:34.797" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<robot generated="20170829 15:34:59.038" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/Zuru/TestRepo/TestRobotFramework/CubaAutomaticTests/Tests.robot" id="s1" name="Tests">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -7,8 +7,8 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170829 15:12:35.013" level="INFO">Opening browser 'chrome' to base url 'http://google.pl'</msg>
-<status status="PASS" endtime="20170829 15:12:38.014" starttime="20170829 15:12:35.012"></status>
+<msg timestamp="20170829 15:34:59.272" level="INFO">Opening browser 'chrome' to base url 'http://google.pl'</msg>
+<status status="PASS" endtime="20170829 15:35:03.065" starttime="20170829 15:34:59.271"></status>
 </kw>
 <test id="s1-t1" name="Google devops and find eficode">
 <kw type="setup" name="Go To" library="Selenium2Library">
@@ -16,8 +16,8 @@
 <arguments>
 <arg>${HOMEPAGE}</arg>
 </arguments>
-<msg timestamp="20170829 15:12:38.019" level="INFO">Opening url 'http://google.pl'</msg>
-<status status="PASS" endtime="20170829 15:12:38.573" starttime="20170829 15:12:38.018"></status>
+<msg timestamp="20170829 15:35:03.070" level="INFO">Opening url 'http://google.pl'</msg>
+<status status="PASS" endtime="20170829 15:35:03.566" starttime="20170829 15:35:03.069"></status>
 </kw>
 <kw name="Google and check results">
 <arguments>
@@ -30,8 +30,8 @@
 <arg>id=lst-ib</arg>
 <arg>${searchkey}</arg>
 </arguments>
-<msg timestamp="20170829 15:12:38.576" level="INFO">Typing text 'devops' into text field 'id=lst-ib'</msg>
-<status status="PASS" endtime="20170829 15:12:38.962" starttime="20170829 15:12:38.575"></status>
+<msg timestamp="20170829 15:35:03.568" level="INFO">Typing text 'devops' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20170829 15:35:03.962" starttime="20170829 15:35:03.567"></status>
 </kw>
 <kw name="Press Key" library="Selenium2Library">
 <doc>Simulates user pressing key on element identified by `locator`.</doc>
@@ -39,21 +39,29 @@
 <arg>id=lst-ib</arg>
 <arg>\\13</arg>
 </arguments>
-<status status="PASS" endtime="20170829 15:12:40.450" starttime="20170829 15:12:38.963"></status>
+<status status="PASS" endtime="20170829 15:35:05.159" starttime="20170829 15:35:03.963"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>${results}</arg>
 </arguments>
-<status status="PASS" endtime="20170829 15:12:40.491" starttime="20170829 15:12:40.450"></status>
+<status status="PASS" endtime="20170829 15:35:05.196" starttime="20170829 15:35:05.159"></status>
 </kw>
-<status status="PASS" endtime="20170829 15:12:40.491" starttime="20170829 15:12:38.573"></status>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>file.jpg</arg>
+</arguments>
+<msg timestamp="20170829 15:35:05.963" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file.jpg"&gt;&lt;img src="file.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170829 15:35:05.963" starttime="20170829 15:35:05.196"></status>
+</kw>
+<status status="PASS" endtime="20170829 15:35:05.963" starttime="20170829 15:35:03.566"></status>
 </kw>
 <tags>
-<tag>devops eficode smoke</tag>
+<tag>devops</tag>
 </tags>
-<status status="PASS" endtime="20170829 15:12:40.491" critical="yes" starttime="20170829 15:12:38.015"></status>
+<status status="PASS" endtime="20170829 15:35:05.964" critical="yes" starttime="20170829 15:35:03.067"></status>
 </test>
 <test id="s1-t2" name="Google devo and find its web site">
 <kw type="setup" name="Go To" library="Selenium2Library">
@@ -61,8 +69,8 @@
 <arguments>
 <arg>${HOMEPAGE}</arg>
 </arguments>
-<msg timestamp="20170829 15:12:40.494" level="INFO">Opening url 'http://google.pl'</msg>
-<status status="PASS" endtime="20170829 15:12:41.370" starttime="20170829 15:12:40.494"></status>
+<msg timestamp="20170829 15:35:05.968" level="INFO">Opening url 'http://google.pl'</msg>
+<status status="PASS" endtime="20170829 15:35:06.617" starttime="20170829 15:35:05.967"></status>
 </kw>
 <kw name="Google and check results">
 <arguments>
@@ -75,8 +83,8 @@
 <arg>id=lst-ib</arg>
 <arg>${searchkey}</arg>
 </arguments>
-<msg timestamp="20170829 15:12:41.372" level="INFO">Typing text 'deveo' into text field 'id=lst-ib'</msg>
-<status status="PASS" endtime="20170829 15:12:41.581" starttime="20170829 15:12:41.371"></status>
+<msg timestamp="20170829 15:35:06.619" level="INFO">Typing text 'deveo' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20170829 15:35:07.020" starttime="20170829 15:35:06.618"></status>
 </kw>
 <kw name="Press Key" library="Selenium2Library">
 <doc>Simulates user pressing key on element identified by `locator`.</doc>
@@ -84,21 +92,29 @@
 <arg>id=lst-ib</arg>
 <arg>\\13</arg>
 </arguments>
-<status status="PASS" endtime="20170829 15:12:43.605" starttime="20170829 15:12:41.582"></status>
+<status status="PASS" endtime="20170829 15:35:12.211" starttime="20170829 15:35:07.020"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>${results}</arg>
 </arguments>
-<status status="PASS" endtime="20170829 15:12:43.640" starttime="20170829 15:12:43.605"></status>
+<status status="PASS" endtime="20170829 15:35:12.269" starttime="20170829 15:35:12.211"></status>
 </kw>
-<status status="PASS" endtime="20170829 15:12:43.640" starttime="20170829 15:12:41.370"></status>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>file.jpg</arg>
+</arguments>
+<msg timestamp="20170829 15:35:12.588" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file.jpg"&gt;&lt;img src="file.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170829 15:35:12.589" starttime="20170829 15:35:12.270"></status>
+</kw>
+<status status="PASS" endtime="20170829 15:35:12.589" starttime="20170829 15:35:06.617"></status>
 </kw>
 <tags>
-<tag>Devo eficode</tag>
+<tag>devo</tag>
 </tags>
-<status status="PASS" endtime="20170829 15:12:43.640" critical="yes" starttime="20170829 15:12:40.493"></status>
+<status status="PASS" endtime="20170829 15:35:12.590" critical="yes" starttime="20170829 15:35:05.966"></status>
 </test>
 <test id="s1-t3" name="Google robot and find its web site">
 <kw type="setup" name="Go To" library="Selenium2Library">
@@ -106,8 +122,8 @@
 <arguments>
 <arg>${HOMEPAGE}</arg>
 </arguments>
-<msg timestamp="20170829 15:12:43.642" level="INFO">Opening url 'http://google.pl'</msg>
-<status status="PASS" endtime="20170829 15:12:44.444" starttime="20170829 15:12:43.642"></status>
+<msg timestamp="20170829 15:35:12.592" level="INFO">Opening url 'http://google.pl'</msg>
+<status status="PASS" endtime="20170829 15:35:13.097" starttime="20170829 15:35:12.592"></status>
 </kw>
 <kw name="Google and check results">
 <arguments>
@@ -120,8 +136,8 @@
 <arg>id=lst-ib</arg>
 <arg>${searchkey}</arg>
 </arguments>
-<msg timestamp="20170829 15:12:44.445" level="INFO">Typing text 'robot framework' into text field 'id=lst-ib'</msg>
-<status status="PASS" endtime="20170829 15:12:44.642" starttime="20170829 15:12:44.445"></status>
+<msg timestamp="20170829 15:35:13.099" level="INFO">Typing text 'robot framework' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20170829 15:35:13.443" starttime="20170829 15:35:13.098"></status>
 </kw>
 <kw name="Press Key" library="Selenium2Library">
 <doc>Simulates user pressing key on element identified by `locator`.</doc>
@@ -129,28 +145,37 @@
 <arg>id=lst-ib</arg>
 <arg>\\13</arg>
 </arguments>
-<status status="PASS" endtime="20170829 15:12:45.662" starttime="20170829 15:12:44.642"></status>
+<status status="PASS" endtime="20170829 15:35:15.010" starttime="20170829 15:35:13.443"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>${results}</arg>
 </arguments>
-<status status="PASS" endtime="20170829 15:12:45.736" starttime="20170829 15:12:45.663"></status>
+<status status="PASS" endtime="20170829 15:35:15.045" starttime="20170829 15:35:15.011"></status>
 </kw>
-<status status="PASS" endtime="20170829 15:12:45.736" starttime="20170829 15:12:44.444"></status>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>file.jpg</arg>
+</arguments>
+<msg timestamp="20170829 15:35:15.346" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file.jpg"&gt;&lt;img src="file.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170829 15:35:15.347" starttime="20170829 15:35:15.045"></status>
+</kw>
+<status status="PASS" endtime="20170829 15:35:15.347" starttime="20170829 15:35:13.097"></status>
 </kw>
 <tags>
+<tag>devo</tag>
 <tag>robot</tag>
 </tags>
-<status status="PASS" endtime="20170829 15:12:45.737" critical="yes" starttime="20170829 15:12:43.641"></status>
+<status status="PASS" endtime="20170829 15:35:15.347" critical="yes" starttime="20170829 15:35:12.591"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20170829 15:12:45.869" starttime="20170829 15:12:45.739"></status>
+<status status="PASS" endtime="20170829 15:35:15.469" starttime="20170829 15:35:15.350"></status>
 </kw>
 <doc>Demonstration Selenium2Library by googling.</doc>
-<status status="PASS" endtime="20170829 15:12:45.869" starttime="20170829 15:12:34.799"></status>
+<status status="PASS" endtime="20170829 15:35:15.470" starttime="20170829 15:34:59.044"></status>
 </suite>
 <statistics>
 <total>
@@ -158,8 +183,8 @@
 <stat fail="0" pass="3">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">Devo eficode</stat>
-<stat fail="0" pass="1">devops eficode smoke</stat>
+<stat fail="0" pass="2">devo</stat>
+<stat fail="0" pass="1">devops</stat>
 <stat fail="0" pass="1">robot</stat>
 </tag>
 <suite>
